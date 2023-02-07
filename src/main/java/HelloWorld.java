@@ -15,7 +15,7 @@ public class HelloWorld {
 //
 //        //myNumber not initialized error;
 //        //myNumber when assigned 3.14 references casting long to double i.e. incompatible types.
-//        //incompatible types when assigned the data type float
+//        //incompatible type when assigned the data type float
 //        float myNumber = 3.14;
 //        System.out.print(myNumber);
 //
@@ -29,7 +29,7 @@ public class HelloWorld {
 //        System.out.println(++y);
 //        System.out.println(y);
 //
-//        //output delcares java: not a statement
+//        //output declares java: not a statement
 //        String class = "Duff";
 //        System.out.println(class);
 //
