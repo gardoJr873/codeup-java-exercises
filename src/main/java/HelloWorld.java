@@ -1,7 +1,7 @@
-//public class HelloWorld {
-//    public static void main(String[] args){
-//        System.out.print("Hello,");
-//        System.out.println(" World!");
+public class HelloWorld {
+    public static void main(String[] args){
+        System.out.print("Hello,");
+        System.out.println(" World!");
 //
 //        //added escape sequence initially to compensate for output of
 //        // myFavoriteNumber displaying on same line as Hello World but
@@ -63,5 +63,5 @@
 //        biggerNumber = 32767;
 //        System.out.println(++biggerNumber);
 //        //console output returns negative number whether byte, short, int, long
-//    }
-//}
+    }
+}
