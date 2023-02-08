@@ -1,11 +1,26 @@
-import javax.sound.midi.Soundbank;
+import java.util.Objects;
+import java.util.Scanner;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        for(int i = 5; i <=15; i++) {
-            System.out.println(i);
-        } for (int x = 0; x <= 50; ++x) {
-            System.out.println(x+x);
-        }
+        Scanner choice = new Scanner(System.in);
+        boolean done = false;
+        do {
+            System.out.println("What number would you like to go up to?");
+            double numChoice = Integer.parseInt(choice.nextLine());
+
+            System.out.printf("Here is your table!%n number | squared | cubed %n --------- | ---------- | --------%n");
+
+            for (int i = 1; i <= numChoice; i++) {
+                System.out.println(i + " \t\t\t   |  " + Math.pow(i, 2) + "\t\t|\t  " + (Math.pow(i, 3)));
+            }
+                System.out.println("Would you like to go again ");
+                String userChoice = String.valueOf(choice.nextLine());
+            if(userChoice.equals("no")){
+                System.out.println("Thank You");
+                break;
+            }
+        } while (true);
     }
+
 }
