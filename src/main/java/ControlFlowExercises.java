@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
         Scanner choice = new Scanner(System.in);
-        boolean done = false;
         do {
             System.out.println("What number would you like to go up to?");
             double numChoice = Integer.parseInt(choice.nextLine());
@@ -16,11 +15,13 @@ public class ControlFlowExercises {
             }
                 System.out.println("Would you like to go again ");
                 String userChoice = String.valueOf(choice.nextLine());
-            if(userChoice.equals("no")){
+
+            if(userChoice.equalsIgnoreCase("no")){
                 System.out.println("Thank You");
                 break;
             }
         } while (true);
+        choice.close();
     }
 
 }
